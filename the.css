@@ -1,0 +1,96 @@
+.body {
+  background-color: aqua;
+}
+header {
+  background-color: rgb(115, 115, 115);
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar {
+  background-color: aqua;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  line-height: 20px;
+  justify-content: space-between;
+  top: 0%;
+}
+
+.navbar ul li {
+  display: inline-block;
+  margin: auto;
+}
+
+.navbar a {
+  color: #000;
+  text-decoration: none;
+  right: 0px;
+}
+
+.container {
+  width: 80%;
+  background-color: white;
+  padding: 20px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 20px auto;
+  grid-template-areas:
+    'header1 header1 header1 header1'
+    'artikel1 artikel2 artikel3 artikel3'
+    'head head head head';
+    gap: 10px;
+    margin-top: 50px;
+    margin: auto;
+
+}
+
+.container1 {
+  width: 80%;
+  background-color: white;
+  padding: 20px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 20px auto;
+  grid-template-areas:
+    'header2 header2 header2 header2'
+    'poto1 poto'
+    'artikel4 artikel4';
+    gap: 10px;
+    margin-top: 50px;
+    margin: auto;
+}
+
+.header1 {grid-area: header1;}
+.artikel1 {grid-area: artikel1;}
+.artikel2 {grid-area: artikel2;}
+.artikel3 {grid-area: artikel3;}
+.header2 {grid-area: header2;}
+.poto {grid-area: poto;}
+.artikel4 {grid-area: artikel4;}
+
+.poto{
+  width: 50%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+footer{
+  background-color: rgb(175, 175, 175);
+  display: flex;
+  justify-content: center;
+  height: 50px;
+}
+.gambar{
+  width: 10%;
+  height: 10px;
+}
